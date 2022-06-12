@@ -1,0 +1,31 @@
+.forecast {
+    margin: 3em 9em;
+}
+.extraInfo {
+    overflow-x: scroll;
+}
+
+.heading2 {
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+}
+
+.hourly {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+
+}
+
+@media screen and (max-width: 500px) {
+    .forecast {
+        margin: 1em 2em;
+    }
+    .hourly {
+        gap: 25px;
+        overflow-x: scroll;
+    }
+  }

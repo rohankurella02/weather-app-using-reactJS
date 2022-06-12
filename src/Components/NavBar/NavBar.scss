@@ -1,0 +1,97 @@
+.Nav {
+    background-color: transparent;
+    margin: 13px;
+    overflow-y: visible;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 1.5em;
+    font-weight: 900;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a {
+        color: white!important;
+    }
+}
+
+
+.Nav.active {
+    padding: 13px;
+    font-weight: 900;
+    margin: 0;
+    transition: all 0.3s ease;
+    background-color: whitesmoke;
+    top: 0;
+    color: black;
+    position: fixed;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center; 
+    z-index: 999;
+    box-shadow: 0 10px 28px #2524255f;
+    
+    a {
+        color: black!important;
+    }
+    a::after {
+        background-color: black;
+    }
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: medium;
+    align-items: center;
+    gap: 50px;
+    margin-right: 33px;
+}
+.item {
+    position: relative;
+    transition: all 0.5s ease;
+}
+.item:hover {
+    cursor: pointer;
+    transition: all 0.5s ease;
+    color: rgba(0, 0, 0, 0.583);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    &:visited {
+        text-decoration: none;
+    }
+}
+
+.Nav.active a {
+    color: black;
+}
+
+.Nav.active .active {
+    color: rgb(244, 7, 117);
+}
+
+.active {
+    color: #f8d805;
+    transition: all 0.5s ease;
+}
+
+a::after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 0.4rem;
+    width: 0%;
+    background-color: rgb(245, 236, 236);
+    transition: all 250ms ease-in-out;
+}
+
+a:hover {
+    color: white;
+}
+
+a:hover::after {
+    width: 98%;
+}

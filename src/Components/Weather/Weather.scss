@@ -1,0 +1,111 @@
+.wContainer {
+    // border: 1px solid white;
+    border-radius: 30px;
+    height: fit-content;
+    width: 900px;
+    padding: 30px 0px;
+    margin: auto;
+    background-image: linear-gradient(67.5deg, rgb(4, 147, 147), rgb(31, 31, 187));
+
+
+    .dropdown {
+        margin: 23px 20px;
+        text-align: center;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    form {
+        width: 20rem;
+    }
+
+    .time {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        font-size: larger;
+        font-weight: 200;
+        padding: 25px;
+    }
+    .cityName {
+        text-align: center;
+        font-size: 30px;
+        font-weight: 600;
+    }
+    .weatherInfo {
+        text-align: center;
+        margin: 25px 0;
+        color: cyan;
+        font-size: 19px;
+        
+    }
+    .weather {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .temp {
+            font-size: 5em;
+            font-weight: 500;
+            color: white;
+        }
+    }
+    .weatherLogo {
+        width: 14em;
+    }
+    .moreInfo {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .extraInfo {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        margin: 2.5em 0px;
+    }
+}
+
+img {
+    transition: all 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.02);
+    transition: all 0.5s ease;
+}
+
+@media screen and (max-width: 500px) {
+    .wContainer {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        .dropdown {
+            margin: 0;
+            flex-direction: column;
+        }
+        .dropdown p{
+            font-size: 13px!important;
+        }
+        .time {
+            font-size: 1.1em;
+            padding: 23px 5px;
+        }
+        .weather {
+            flex-direction: column;
+        }
+        .weatherLogo {
+            width: 8em;
+        }
+        .extraInfo {
+            flex-direction: column;
+        }
+        .temp {
+            font-size: 3em!important;
+            margin-bottom: 15px;
+        }
+    }
+  }
+
