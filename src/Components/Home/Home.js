@@ -16,7 +16,7 @@ function Home() {
             </div>
             <img className='weatherImg' src={weatherLogo} alt="weather" />
         </div>
-    )
+    ) 
 }
 
 export default Home
